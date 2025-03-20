@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartUI Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="shared.js"></script>
+</head>
+<body>
+  <h2>SmartUI Demo</h2>
+  <div class="legacy-box">
+    <label>Contract Account:</label>
+    <input data-field="contractAccount" readonly><br>
+    <label>Premise:</label>
+    <input data-field="premise" readonly><br>
+    <label>Smart Device:</label>
+    <input data-field="smartDevice" readonly><br>
+    <label>Business Partner:</label>
+    <input data-field="businessPartner" readonly><br>
+  </div>
+  <script>
+    loadScenarioData(data => {
+      populateFieldsFromMetadata(data.metadata || {});
+    });
+  </script>
+</body>
+</html>

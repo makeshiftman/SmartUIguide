@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartUI Training Scenarios</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: "Segoe UI", sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .scenario {
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .scenario img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .scenario h3 {
+      margin: 12px 0 8px;
+      font-size: 1.2rem;
+    }
+    .scenario p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .launch-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose a SmartUI Training Scenario</h1>
+  <div class="grid">
+
+    <div class="scenario">
+      <img src="images/jane-placeholder.jpg" alt="Jane photo">
+      <h3>Jane - App Top-Up Failure</h3>
+      <p>Jane has tried to top up via the app but hasn't received her credit. She is worried her supply may go off overnight.</p>
+      <a class="launch-btn" href="html/openingpage.html?scenario=jane" target="_blank">Open SmartUI</a><br>
+      <a class="launch-btn" href="html/UI5.html" target="_blank">Open UI5</a>
+    </div>
+
+    <div class="scenario">
+      <img src="images/paul-placeholder.jpg" alt="Paul photo">
+      <h3>Paul - Lost UTRN</h3>
+      <p>Paul topped up at a Payzone shop but lost his receipt. He needs his UTRN resent and wants to know if the credit went through.</p>
+      <a class="launch-btn" href="SmartUI.html?scenario=paul" target="_blank">Launch SmartUI</a>
+    </div>
+
+    <div class="scenario">
+      <img src="images/samira-placeholder.jpg" alt="Samira photo">
+      <h3>Samira - No Supply</h3>
+      <p>Samira’s meter is blank and she has no electricity. She isn't sure if it's a fault, outage or credit issue.</p>
+      <a class="launch-btn" href="SmartUI.html?scenario=samira" target="_blank">Launch SmartUI</a>
+    </div>
+
+    <div class="scenario">
+      <img src="images/dave-placeholder.jpg" alt="Dave photo">
+      <h3>Dave - Unexpected Debt Collection</h3>
+      <p>Dave noticed money being deducted from his top-ups and believes it's for an old debt. He’s not sure why and wants it stopped.</p>
+      <a class="launch-btn" href="SmartUI.html?scenario=dave" target="_blank">Launch SmartUI</a>
+    </div>
+
+  </div>
+</body>
+</html>
